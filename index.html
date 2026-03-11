@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Professional Fitness Clock</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 class="title">🏃 Fitness Smart Clock</h1>
+
+<div class="dashboard">
+
+<!-- CLOCK -->
+<div class="card">
+<h2>⏰ Live Clock</h2>
+<div id="emoji"></div>
+<div id="clock"></div>
+</div>
+
+<!-- TIMER -->
+<div class="card">
+<h2>⏳ Workout Timer</h2>
+
+<input type="number" id="minutes" placeholder="Minutes">
+
+<div class="buttons">
+<button onclick="startTimer()">Start</button>
+<button onclick="resetTimer()">Reset</button>
+</div>
+
+<div id="timerDisplay">00:00</div>
+
+</div>
+
+<!-- STOPWATCH -->
+<div class="card">
+
+<h2>⏱ Stopwatch</h2>
+
+<div id="stopwatch">00:00:00</div>
+
+<div class="buttons">
+<button onclick="startStopwatch()">Start</button>
+<button onclick="stopStopwatch()">Stop</button>
+<button onclick="resetStopwatch()">Reset</button>
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
